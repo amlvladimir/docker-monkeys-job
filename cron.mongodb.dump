@@ -1,0 +1,2 @@
+# /etc/cron.d/
+*1 * * * * root /var/www/mongodb.dump.sh
