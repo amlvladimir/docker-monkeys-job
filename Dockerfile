@@ -26,8 +26,8 @@ RUN apt-get update && apt-get install -y mongodb-org-tools mongodb-org-shell
 
 # RUN mongodump --host mongo --port 27017 --username 'root' --password 'example' --db admin && ls -l ./dump/admin && tar -zcvf dump.tar.gz ./dump && ls -l ./
 
-RUN cp ./cron.mongodb.dump /etc/cron.d/cron.mongodb.dump
-RUN service cron restart
+RUN cp ./mongodb.cron /etc/cron.d/mongodb
+RUN service cron start
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["top", "-b"]
 CMD ["-c"]

@@ -2,6 +2,7 @@ version: "2.0"
 services:
   mongo:
     image: mongo
+    container_name: mongo
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
@@ -22,8 +23,6 @@ services:
     working_dir: /var/www
     volumes:
       - ./:/var/www
-#      - ./aws-config:/root/.aws/config
-#      - ./aws-credentials:/root/.aws/credentials
     networks:
       - app-network
 #Docker Networks
