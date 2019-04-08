@@ -1,2 +1,4 @@
 /config.sh
 /.DS_Store
+/aws-credentials
+/aws-config
