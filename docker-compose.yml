@@ -21,8 +21,9 @@ services:
       SERVICE_TAGS: dev
     working_dir: /var/www
     volumes:
-       - ./:/var/www
-       #- /var/www/node_modules
+      - ./:/var/www
+#      - ./aws-config:/root/.aws/config
+#      - ./aws-credentials:/root/.aws/credentials
     networks:
       - app-network
 #Docker Networks
