@@ -1,5 +1,4 @@
 # docker-monkeys-job
 
-Execute "./init.sh" command, make sure: 
-- file have a permission for execution "chmod u+x ./init.sh"
-- there is installed "/bin/bash" shell
+For dump a MongoDB database please override the set of required credentials (`set MONGO_HOST=***`, `set MONGO_PORT=***`, `set MONGO_USER=***`, `set MONGO_PASSWORD=***`, `set MONGO_DB=***`, , `set S3BUCKET=***`)
+and execute the command "./mongodb.dump.sh".

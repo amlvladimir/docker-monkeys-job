@@ -1,1 +1,0 @@
-* 3 * * * root cd /var/www && sh mongodb.dump.sh
